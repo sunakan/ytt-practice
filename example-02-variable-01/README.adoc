@@ -1,0 +1,12 @@
+.実行
+----
+$ make run
+cat main.yml | ../ytt -f-
+a: 1
+b: hello
+c:
+- 2
+- foo
+d:
+  hoge: 3
+----

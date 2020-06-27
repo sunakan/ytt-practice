@@ -1,0 +1,11 @@
+---
+#@ value_a = 1
+#@ value_b = 'hello'
+#@ value_c = [2,'foo']
+#@ value_d = {'hoge': 3}
+
+a: #@ value_a
+b: #@ value_b
+c: #@ value_c
+d: #@ value_d
+...
