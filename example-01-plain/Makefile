@@ -5,4 +5,4 @@ YTT_COMMAND := ../ytt
 ################################################################################
 .PHONY: run
 run:
-	cat plain.yml | $(YTT_COMMAND) -f-
+	cat main.yml | $(YTT_COMMAND) -f-
