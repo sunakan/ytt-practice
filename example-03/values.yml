@@ -1,0 +1,9 @@
+#@data/values
+---
+value_a: 'something'
+value_b: ''
+value_c: false
+value_d: 0
+value_e: 0.0
+value_f: [1,'ff']
+...

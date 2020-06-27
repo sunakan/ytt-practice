@@ -1,0 +1,13 @@
+.実行
+----
+$ make run
+../ytt --file .
+a: something
+b: ""
+c: false
+d: 0
+e: 0
+f:
+- 1
+- ff
+----
