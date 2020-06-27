@@ -1,0 +1,12 @@
+.実行
+----
+$ make run
+../ytt --file .
+a: ok
+b: ok
+c: ok
+../ytt --file . --data-value is_ok=false
+d: NOOO
+e: NOOO
+f: NOOO
+----
