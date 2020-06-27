@@ -1,0 +1,7 @@
+#@data/values
+---
+value_a: 'dev'
+value_b: 'dev'
+value_c: 'dev'
+value_d: 'dev'
+...

@@ -1,0 +1,6 @@
+#@data/values
+---
+value_d: 'production'
+value_e: 'production'
+value_f: 'production'
+...

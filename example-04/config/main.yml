@@ -1,0 +1,9 @@
+#@ load("@ytt:data", "data")
+---
+a: #@ data.values.value_a
+b: #@ data.values.value_b
+c: #@ data.values.value_c
+d: #@ data.values.value_d
+e: #@ data.values.value_e
+f: #@ data.values.value_f
+...

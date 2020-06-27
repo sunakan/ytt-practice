@@ -1,0 +1,51 @@
+.実行1
+----
+$ make default
+../ytt --file ./config
+a: something
+b: ""
+c: false
+d: 0
+e: 0
+f:
+- 1
+- ff
+----
+
+.実行2
+----
+$ make dev
+../ytt --file ./config --file ./env/development.yml
+a: dev
+b: dev
+c: dev
+d: dev
+e: 0
+f:
+- 1
+- ff
+----
+
+.実行3
+----
+$ make stg
+../ytt --file ./config --file ./env/staging.yml
+a: staging
+b: staging
+c: false
+d: 0
+e: staging
+f: staging
+----
+
+.実行4
+----
+$ make prd
+../ytt --file ./config --file ./env/production.yml
+a: something
+b: ""
+c: false
+d: production
+e: production
+f: production
+----
