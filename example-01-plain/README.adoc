@@ -1,0 +1,27 @@
+.実行方法
+----
+$ make run
+or
+$ cat plain.yml | ./ytt -f-
+or
+$ ./ytt --file plain.yml
+----
+
+.実行
+----
+$ cat plain.yml | ./ytt -f-
+editors:
+- vim
+- emacs
+- intellij_all
+os:
+- windows
+- linux
+- macos
+----
+
+.jsonへの変換
+----
+$ cat plain.yml | ./ytt -f- --output json
+{"editors":["vim","emacs","intellij_all"],"os":["windows","linux","macos"]}
+----

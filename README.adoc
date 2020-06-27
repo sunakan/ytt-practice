@@ -1,0 +1,20 @@
+= Let's ytt
+
+* <<setup-ytt, セットアップ>>
+* <<uninstall-ytt, アンインストール>>
+
+[[setup-ytt]]
+.yttのセットアップ
+----
+$ make setup-ytt
+....
+ytt version 0.28.0
+----
+
+[[uninstall-ytt]]
+.yttのアンインストール
+----
+$ make uninstall-ytt
+command -v ./ytt && rm ./ytt
+./ytt
+----
