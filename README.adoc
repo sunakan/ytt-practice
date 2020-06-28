@@ -26,3 +26,4 @@ command -v ./ytt && rm ./ytt
 * link:./example-05/README.adoc[example-05:If文]
 * link:./example-06/README.adoc[example-06:Function]
 * link:./example-07/README.adoc[example-07:別ファイルとして関数を定義してLoad]
+* link:./example-08/README.adoc[example-08:標準libraryを読み込んで使う]

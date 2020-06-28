@@ -1,0 +1,17 @@
+== 標準libraryを読み込んで使う
+
+色々ある
+
+link::https://github.com/k14s/ytt/tree/develop/pkg/yttlibrary[]
+
+----
+$ make run
+../ytt --file .
+regex: true
+sha256a: 936a185caaa266bb9cbe981e9e05cb78cd732b0b3280eb944412bb6f8f8f07af
+sha256b: 936a185caaa266bb9cbe981e9e05cb78cd732b0b3280eb944412bb6f8f8f07af
+sha256c: 6ebf0bd40ab757124aae5f8e400521b60b43ce400e4d5d61734eaab64740d5d1
+base64a: aGVsbG93b3JsZA==
+base64b: aGVsbG93b3JsZA==
+base64c: aGVsbG93b3JsZDI=
+----

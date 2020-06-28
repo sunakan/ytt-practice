@@ -1,0 +1,12 @@
+---
+#@ load("@ytt:regexp", "regexp")
+#@ load("@ytt:base64", "base64")
+#@ load("@ytt:sha256", "sha256")
+regex: #@ regexp.match("[a-z]+[0-9]+", "__he110w0r1d__")
+sha256a: #@ sha256.sum("helloworld")
+sha256b: #@ sha256.sum("helloworld")
+sha256c: #@ sha256.sum("helloworld2")
+base64a: #@ base64.encode("helloworld")
+base64b: #@ base64.encode("helloworld")
+base64c: #@ base64.encode("helloworld2")
+...
