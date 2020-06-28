@@ -1,0 +1,20 @@
+== 文字列中で変数の展開やkeyとして利用する("hello, #{val}. bye."的な奴)
+
+* 必要なおまじない：#@yaml/text-templated-strings
+* 構文は(@= 変数名 @)
+
+----
+$ make run
+../ytt --file .
+a: I like apple and orange
+b: I like apple and orange
+c: I like (@= val1 @) and (@= val2 @)
+d: I like apple and orange
+e_apple: not orange
+f_orange: not apple
+---
+a: I like apple and orange
+b: I like apple and orange
+c: I like apple and orange
+d: I like apple and orange
+----

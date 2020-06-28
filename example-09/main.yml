@@ -1,0 +1,23 @@
+---
+#@ val1 = "apple"
+#@ val2 = "orange"
+a: #@ "I like {} and {}".format(val1, val2)
+#@yaml/text-templated-strings
+b: "I like (@= val1 @) and (@= val2 @)"
+#! text-templated-stringsというおまじないが必要。ないとそのまま
+c: "I like (@= val1 @) and (@= val2 @)"
+#@yaml/text-templated-strings
+d: "I like (@= val1 @) and (@= val2 @)"
+#@yaml/text-templated-strings
+e_(@= val1 @): "not (@= val2 @)"
+#@yaml/text-templated-strings
+f_(@= val2 @): "not (@= val1 @)"
+
+#! 最初に宣言しておくと楽だったりもする
+#@yaml/text-templated-strings
+---
+a: #@ "I like {} and {}".format(val1, val2)
+b: "I like (@= val1 @) and (@= val2 @)"
+c: "I like (@= val1 @) and (@= val2 @)"
+d: "I like (@= val1 @) and (@= val2 @)"
+...

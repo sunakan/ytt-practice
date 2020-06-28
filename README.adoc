@@ -27,3 +27,4 @@ command -v ./ytt && rm ./ytt
 * link:./example-06/README.adoc[example-06:Function]
 * link:./example-07/README.adoc[example-07:別ファイルとして関数を定義してLoad]
 * link:./example-08/README.adoc[example-08:標準libraryを読み込んで使う]
+* link:./example-09/README.adoc[example-09:文字列中で変数の展開やkeyとして利用する("hello, \#{val}. bye."的な奴)]
