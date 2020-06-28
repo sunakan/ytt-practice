@@ -1,0 +1,14 @@
+---
+#! 拡張子が決まってるらしい
+#! hint: library filename must end with '.lib.yml' or '.star'
+#! 関数の名前を別の名前として受け取ることも可能（バッティングを防げる）
+#@ load("func-hello.star", hello2="hello")
+#@ load("funcs.lib.yml", "calc", "spec")
+
+a: a
+b: #@ hello2()
+c: #@ calc(x=1)
+d: #@ calc(x=1,y=1,z=2)
+e: #@ spec(os='Mac')
+f: #@ spec(os='Win',cpus=1)
+...

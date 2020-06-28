@@ -1,0 +1,19 @@
+== 別ファイルとして関数を定義してLoad
+
+.実行
+----
+$ make run
+../ytt --file .
+a: a
+b: HelloWorld
+c: 12
+d: 4
+e:
+  os: Mac
+  cpus: 2
+  memory: 512
+f:
+  os: Win
+  cpus: 1
+  memory: 512
+----

@@ -25,3 +25,4 @@ command -v ./ytt && rm ./ytt
 * link:./example-04/README.adoc[example-04:環境毎に外から注入]
 * link:./example-05/README.adoc[example-05:If文]
 * link:./example-06/README.adoc[example-06:Function]
+* link:./example-07/README.adoc[example-07:別ファイルとして関数を定義してLoad]

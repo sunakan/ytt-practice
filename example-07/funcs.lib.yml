@@ -1,0 +1,11 @@
+---
+#@ def calc(x,y=5,z=2):
+#@   return (x + y) * z
+#@ end
+
+#@ def spec(os,cpus=2,memory=512):
+os: #@ os
+cpus: #@ cpus
+memory: #@ memory
+#@ end
+...
