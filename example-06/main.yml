@@ -1,0 +1,22 @@
+---
+#@ def hello():
+#@   return "HelloWorld"
+#@ end
+
+#@ def calc(x,y=5,z=2):
+#@   return (x + y) * z
+#@ end
+
+#@ def spec(os,cpus=2,memory=512):
+os: #@ os
+cpus: #@ cpus
+memory: #@ memory
+#@ end
+
+a: a
+b: #@ hello()
+c: #@ calc(x=1)
+d: #@ calc(x=1,y=1,z=2)
+e: #@ spec(os='Mac')
+f: #@ spec(os='Win',cpus=1)
+...
